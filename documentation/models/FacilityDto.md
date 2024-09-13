@@ -4,10 +4,10 @@ The list of facilities available in this property. Requires `{"extras":["facilit
 
 **Properties**
 
-| Name       | Type                        | Required | Description                                                                                                                                             |
-| :--------- | :-------------------------- | :------- | :------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| Id         | long                        | ❌       | A signed integer number that uniquely identifies an accommodation property facility. Examples of facilities are: Parking, Restaurant, Room service etc. |
-| Attributes | List<FacilityDtoAttributes> | ❌       | List of optional attributes for this facility.                                                                                                          |
+| Name       | Type                          | Required | Description                                                                                                                                             |
+| :--------- | :---------------------------- | :------- | :------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Id         | long                          | ❌       | A signed integer number that uniquely identifies an accommodation property facility. Examples of facilities are: Parking, Restaurant, Room service etc. |
+| Attributes | List`<FacilityDtoAttributes>` | ❌       | List of optional attributes for this facility.                                                                                                          |
 
 # FacilityDtoAttributes
 

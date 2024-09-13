@@ -237,7 +237,7 @@ using BookingClient.Models;
 
 var client = new BookingClientClient();
 
-var hotelIds = new List<long>() { 6 };
+var hotelIds = new List`<long>`() { 6 };
 var blockInput = new BlockAvailabilityInputDto(hotelIds, "checkin", "checkout", "guest_cc");
 
 var response = await client.DemandApiV2Compatible.GetBlockAvailabilityAsync(blockInput, GetBlockAvailabilityAccept.ApplicationJsonApplicationXml);

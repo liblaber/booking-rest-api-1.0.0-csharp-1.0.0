@@ -4,9 +4,9 @@ Payment terms and conditions for this product.
 
 **Properties**
 
-| Name           | Type               | Required | Description |
-| :------------- | :----------------- | :------- | :---------- |
-| PaymentTypes\_ | List<PaymentTypes> | ❌       |             |
+| Name           | Type                 | Required | Description |
+| :------------- | :------------------- | :------- | :---------- |
+| PaymentTypes\_ | List`<PaymentTypes>` | ❌       |             |
 
 # PaymentTypes
 

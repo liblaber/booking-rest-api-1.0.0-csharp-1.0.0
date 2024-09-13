@@ -2,10 +2,10 @@
 
 **Properties**
 
-| Name        | Type                            | Required | Description                                              |
-| :---------- | :------------------------------ | :------- | :------------------------------------------------------- |
-| Constants\_ | List<Constants>                 | ❌       | Allows to filter the results only for specific sections. |
-| Languages   | List<ConstantInputDtoLanguages> | ❌       |                                                          |
+| Name        | Type                              | Required | Description                                              |
+| :---------- | :-------------------------------- | :------- | :------------------------------------------------------- |
+| Constants\_ | List`<Constants>`                 | ❌       | Allows to filter the results only for specific sections. |
+| Languages   | List`<ConstantInputDtoLanguages>` | ❌       |                                                          |
 
 # Constants
 

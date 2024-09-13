@@ -2,11 +2,11 @@
 
 **Properties**
 
-| Name                 | Type                                 | Required | Description                                                                                                                            |
-| :------------------- | :----------------------------------- | :------- | :------------------------------------------------------------------------------------------------------------------------------------- |
-| FacilityTypeIds      | List<long>                           | ❌       | Limit the results to these facility types.                                                                                             |
-| HotelFacilityTypeIds | List<long>                           | ❌       | Limit the results to these hotel facility types.                                                                                       |
-| Languages            | List<HotelFacilityInputDtoLanguages> | ❌       | Limit the results to these languages. Please check the "Possible Values" section of the documentation for the accepted language codes. |
+| Name                 | Type                                   | Required | Description                                                                                                                            |
+| :------------------- | :------------------------------------- | :------- | :------------------------------------------------------------------------------------------------------------------------------------- |
+| FacilityTypeIds      | List`<long>`                           | ❌       | Limit the results to these facility types.                                                                                             |
+| HotelFacilityTypeIds | List`<long>`                           | ❌       | Limit the results to these hotel facility types.                                                                                       |
+| Languages            | List`<HotelFacilityInputDtoLanguages>` | ❌       | Limit the results to these languages. Please check the "Possible Values" section of the documentation for the accepted language codes. |
 
 # HotelFacilityInputDtoLanguages
 

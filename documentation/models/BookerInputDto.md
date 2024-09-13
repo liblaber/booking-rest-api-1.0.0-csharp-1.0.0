@@ -4,12 +4,12 @@ The booker's information.
 
 **Properties**
 
-| Name            | Type             | Required | Description                                                                                                           |
-| :-------------- | :--------------- | :------- | :-------------------------------------------------------------------------------------------------------------------- |
-| Country         | string           | ✅       | The booker country for showing the best price for that user and obeying laws regarding the display of taxes and fees. |
-| Platform\_      | Platform         | ✅       | The booker platform for showing the platform based deals and prices.                                                  |
-| TravelPurpose\_ | TravelPurpose    | ❌       | The travel purpose of the booker.                                                                                     |
-| UserGroups\_    | List<UserGroups> | ❌       | The user groups that the booker is a member of.                                                                       |
+| Name            | Type               | Required | Description                                                                                                           |
+| :-------------- | :----------------- | :------- | :-------------------------------------------------------------------------------------------------------------------- |
+| Country         | string             | ✅       | The booker country for showing the best price for that user and obeying laws regarding the display of taxes and fees. |
+| Platform\_      | Platform           | ✅       | The booker platform for showing the platform based deals and prices.                                                  |
+| TravelPurpose\_ | TravelPurpose      | ❌       | The travel purpose of the booker.                                                                                     |
+| UserGroups\_    | List`<UserGroups>` | ❌       | The user groups that the booker is a member of.                                                                       |
 
 # Platform
 
