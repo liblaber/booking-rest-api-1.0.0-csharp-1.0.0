@@ -8,7 +8,7 @@
 | Checkout     | string                                | ✅       | The departure date. Must be later than (checkin). Must be between 1 and 30 days after (checkin).                      |
 | GuestCountry | string                                | ✅       | Guest country code. Used to accurately display the best prices and price details for people from that country.        |
 | NoRooms      | long                                  | ✅       | The only group will be split in the given number of rooms automatically                                               |
-| HotelIds     | List<long>                            | ❌       | Limit the result list to up to 1000 specified hotels where they have availability for the specified guests and dates. |
+| HotelIds     | List`<long>`                          | ❌       | Limit the result list to up to 1000 specified hotels where they have availability for the specified guests and dates. |
 | Currency     | string                                | ❌       | Returns the price in this currency                                                                                    |
 | UserPlatform | HotelAvailabilityInputDtoUserPlatform | ❌       | The user's platform.                                                                                                  |
 | Rows         | long                                  | ❌       | The maximum number of results to return.                                                                              |

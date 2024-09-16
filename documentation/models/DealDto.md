@@ -4,11 +4,11 @@ This specifies the deal tagging for the product.
 
 **Properties**
 
-| Name               | Type       | Required | Description |
-| :----------------- | :--------- | :------- | :---------- |
-| DiscountPercentage | long       | ❌       |             |
-| PublicPrice        | double     | ❌       |             |
-| Tags\_             | List<Tags> | ❌       |             |
+| Name               | Type         | Required | Description |
+| :----------------- | :----------- | :------- | :---------- |
+| DiscountPercentage | long         | ❌       |             |
+| PublicPrice        | double       | ❌       |             |
+| Tags\_             | List`<Tags>` | ❌       |             |
 
 # Tags
 

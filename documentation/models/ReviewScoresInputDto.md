@@ -4,7 +4,7 @@
 
 | Name           | Type                         | Required | Description                                                                                                                                    |
 | :------------- | :--------------------------- | :------- | :--------------------------------------------------------------------------------------------------------------------------------------------- |
-| HotelIds       | List<long>                   | ✅       | List of hotel ids for which review score information should be displayed.                                                                      |
+| HotelIds       | List`<long>`                 | ✅       | List of hotel ids for which review score information should be displayed.                                                                      |
 | AffiliateId    | long                         | ❌       | Can be used to specify the affiliate id that should be used instead of the default one.                                                        |
 | Language       | ReviewScoresInputDtoLanguage | ❌       | Code of the language used to render response. Please check the "Possible Values" section of the documentation for the accepted language codes. |
 | ReviewerType\_ | ReviewerType                 | ❌       | Limits reviews to those written by specific reviewer type.                                                                                     |

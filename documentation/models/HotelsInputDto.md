@@ -2,13 +2,13 @@
 
 **Properties**
 
-| Name     | Type                       | Required | Description                                                                                                                                  |
-| :------- | :------------------------- | :------- | :------------------------------------------------------------------------------------------------------------------------------------------- |
-| HotelIds | List<long>                 | ❌       | A list of up to 1000 hotel ids.                                                                                                              |
-| Language | HotelsInputDtoLanguage     | ❌       | The language code to return the results in. Please check the "Possible Values" section of the documentation for the accepted language codes. |
-| Extras   | List<HotelsInputDtoExtras> | ❌       | Returns extra bits of information about hotels.                                                                                              |
-| Offset   | long                       | ❌       | The number of rows to offset the results by. NOTE: this needs to be 0 or a multiple of 100.                                                  |
-| Rows     | long                       | ❌       | The maximum number of rows to return. NOTE: this needs to be a multiple of 100.                                                              |
+| Name     | Type                         | Required | Description                                                                                                                                  |
+| :------- | :--------------------------- | :------- | :------------------------------------------------------------------------------------------------------------------------------------------- |
+| HotelIds | List`<long>`                 | ❌       | A list of up to 1000 hotel ids.                                                                                                              |
+| Language | HotelsInputDtoLanguage       | ❌       | The language code to return the results in. Please check the "Possible Values" section of the documentation for the accepted language codes. |
+| Extras   | List`<HotelsInputDtoExtras>` | ❌       | Returns extra bits of information about hotels.                                                                                              |
+| Offset   | long                         | ❌       | The number of rows to offset the results by. NOTE: this needs to be 0 or a multiple of 100.                                                  |
+| Rows     | long                         | ❌       | The maximum number of rows to return. NOTE: this needs to be a multiple of 100.                                                              |
 
 # HotelsInputDtoLanguage
 

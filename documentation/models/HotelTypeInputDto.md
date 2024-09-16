@@ -2,12 +2,12 @@
 
 **Properties**
 
-| Name         | Type                             | Required | Description                                                                                                                            |
-| :----------- | :------------------------------- | :------- | :------------------------------------------------------------------------------------------------------------------------------------- |
-| HotelTypeIds | List<long>                       | ❌       | Limit the results to these hotel types.                                                                                                |
-| Languages    | List<HotelTypeInputDtoLanguages> | ❌       | Limit the results to these languages. Please check the "Possible Values" section of the documentation for the accepted language codes. |
-| Offset       | long                             | ❌       | The number of rows to offset the results by. NOTE: this needs to be 0 or a multiple of 100.                                            |
-| Row          | long                             | ❌       | The maximum number of rows to return. NOTE: this needs to be a multiple of 100.                                                        |
+| Name         | Type                               | Required | Description                                                                                                                            |
+| :----------- | :--------------------------------- | :------- | :------------------------------------------------------------------------------------------------------------------------------------- |
+| HotelTypeIds | List`<long>`                       | ❌       | Limit the results to these hotel types.                                                                                                |
+| Languages    | List`<HotelTypeInputDtoLanguages>` | ❌       | Limit the results to these languages. Please check the "Possible Values" section of the documentation for the accepted language codes. |
+| Offset       | long                               | ❌       | The number of rows to offset the results by. NOTE: this needs to be 0 or a multiple of 100.                                            |
+| Row          | long                               | ❌       | The maximum number of rows to return. NOTE: this needs to be a multiple of 100.                                                        |
 
 # HotelTypeInputDtoLanguages
 

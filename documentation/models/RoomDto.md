@@ -4,19 +4,19 @@ The list of room types available at this property. Requires `{"extras":["rooms"]
 
 **Properties**
 
-| Name              | Type                    | Required | Description                                                                                                                                                       |
-| :---------------- | :---------------------- | :------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Id                | long                    | ❌       | A signed integer number that uniquely identifies an accommodation property room.                                                                                  |
-| Name              | TranslatedString        | ❌       | Translated description of this room. The maximum number of characters returned may be limited by contract.                                                        |
-| Attributes        | List<RoomDtoAttributes> | ❌       | Lists a set of attribute qualifiers for this room. Will not be returned if no relevant attributes are applicable.                                                 |
-| BedOptions        | List<BedOptionDto>      | ❌       | Lists all possible bedding options for this room or apartment.                                                                                                    |
-| CribsAndExtraBeds | CribsAndExtraBedsDto    | ❌       | Lists room options regarding adding cribs and/or extra beds.                                                                                                      |
-| Description       | TranslatedString        | ❌       | Translated description of this room. The maximum number of characters returned may be limited by contract.                                                        |
-| Facilities        | List<long>              | ❌       | A signed integer number that uniquely identifies an accommodation property room facility. Examples of facilities are: Coffee/Tea maker, TV, Airconditioning, etc. |
-| MaximumOccupancy  | RoomMaximumOccupancyDto | ❌       | Occupancy limits and options.                                                                                                                                     |
-| NumberOfRooms     | NumberOfRoomsDto        | ❌       | Total rooms available.                                                                                                                                            |
-| RoomType          | long                    | ❌       | A signed integer number that uniquely identifies an accommodation property room type. Example of room types are: Suite, Apartment, Twin/Double etc.               |
-| Size              | long                    | ❌       | The room area in square meters.                                                                                                                                   |
+| Name              | Type                      | Required | Description                                                                                                                                                       |
+| :---------------- | :------------------------ | :------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Id                | long                      | ❌       | A signed integer number that uniquely identifies an accommodation property room.                                                                                  |
+| Name              | TranslatedString          | ❌       | Translated description of this room. The maximum number of characters returned may be limited by contract.                                                        |
+| Attributes        | List`<RoomDtoAttributes>` | ❌       | Lists a set of attribute qualifiers for this room. Will not be returned if no relevant attributes are applicable.                                                 |
+| BedOptions        | List`<BedOptionDto>`      | ❌       | Lists all possible bedding options for this room or apartment.                                                                                                    |
+| CribsAndExtraBeds | CribsAndExtraBedsDto      | ❌       | Lists room options regarding adding cribs and/or extra beds.                                                                                                      |
+| Description       | TranslatedString          | ❌       | Translated description of this room. The maximum number of characters returned may be limited by contract.                                                        |
+| Facilities        | List`<long>`              | ❌       | A signed integer number that uniquely identifies an accommodation property room facility. Examples of facilities are: Coffee/Tea maker, TV, Airconditioning, etc. |
+| MaximumOccupancy  | RoomMaximumOccupancyDto   | ❌       | Occupancy limits and options.                                                                                                                                     |
+| NumberOfRooms     | NumberOfRoomsDto          | ❌       | Total rooms available.                                                                                                                                            |
+| RoomType          | long                      | ❌       | A signed integer number that uniquely identifies an accommodation property room type. Example of room types are: Suite, Apartment, Twin/Double etc.               |
+| Size              | long                      | ❌       | The room area in square meters.                                                                                                                                   |
 
 # RoomDtoAttributes
 
