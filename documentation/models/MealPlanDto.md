@@ -4,10 +4,10 @@ The meal plan policy for this product.
 
 **Properties**
 
-| Name    | Type          | Required | Description                             |
-| :------ | :------------ | :------- | :-------------------------------------- |
-| Meals\_ | List`<Meals>` | ❌       | The meals included in the meal plan.    |
-| Plan\_  | Plan          | ❌       | The meal plan included in this product. |
+| Name    | Type        | Required | Description                             |
+| :------ | :---------- | :------- | :-------------------------------------- |
+| Meals\_ | List<Meals> | ❌       | The meals included in the meal plan.    |
+| Plan\_  | Plan        | ❌       | The meal plan included in this product. |
 
 # Meals
 

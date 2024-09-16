@@ -2,16 +2,16 @@
 
 **Properties**
 
-| Name          | Type                   | Required | Description                                                                                                                                                                                    |
-| :------------ | :--------------------- | :------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Block         | List`<BlockOutputDto>` | ❌       | The object containing all the relevant information for the combination of room, policy, meal and occupancy that determines the price." A block is the unique entity you book with booking.com. |
-| CanPayNow     | bool                   | ❌       | Boolean value set to "true" if payment can be made during reservation process or "false" if it can not.                                                                                        |
-| Checkin       | string                 | ❌       | The date that was searched for as checkin. Format: YYYY-MM-DD                                                                                                                                  |
-| Checkout      | string                 | ❌       | The date that was searched for as checkout. Format: YYYY-MM-DD                                                                                                                                 |
-| DirectPayment | bool                   | ❌       | Boolean value set to "true" if the direct payment is available or "false" if it is not.                                                                                                        |
-| HotelId       | long                   | ❌       | Booking.com hotel ID. The unique identifier of this hotel.                                                                                                                                     |
-| HotelUrl      | string                 | ❌       | URL of the hotel's page on Booking.com.                                                                                                                                                        |
-| IsFlashDeal   | bool                   | ❌       |                                                                                                                                                                                                |
-| FlashDeal     | bool                   | ❌       |                                                                                                                                                                                                |
+| Name          | Type                 | Required | Description                                                                                                                                                                                    |
+| :------------ | :------------------- | :------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Block         | List<BlockOutputDto> | ❌       | The object containing all the relevant information for the combination of room, policy, meal and occupancy that determines the price." A block is the unique entity you book with booking.com. |
+| CanPayNow     | bool                 | ❌       | Boolean value set to "true" if payment can be made during reservation process or "false" if it can not.                                                                                        |
+| Checkin       | string               | ❌       | The date that was searched for as checkin. Format: YYYY-MM-DD                                                                                                                                  |
+| Checkout      | string               | ❌       | The date that was searched for as checkout. Format: YYYY-MM-DD                                                                                                                                 |
+| DirectPayment | bool                 | ❌       | Boolean value set to "true" if the direct payment is available or "false" if it is not.                                                                                                        |
+| HotelId       | long                 | ❌       | Booking.com hotel ID. The unique identifier of this hotel.                                                                                                                                     |
+| HotelUrl      | string               | ❌       | URL of the hotel's page on Booking.com.                                                                                                                                                        |
+| IsFlashDeal   | bool                 | ❌       |                                                                                                                                                                                                |
+| FlashDeal     | bool                 | ❌       |                                                                                                                                                                                                |
 
 <!-- This file was generated by liblab | https://liblab.com/ -->

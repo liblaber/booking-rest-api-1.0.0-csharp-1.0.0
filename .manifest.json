@@ -1,8 +1,8 @@
 {
-  "liblabVersion": "2.1.23",
-  "date": "2024-07-25T18:51:55.327Z",
+  "liblabVersion": "2.3.2",
+  "date": "2024-09-16T20:10:56.429Z",
   "config": {
-    "apiId": 412,
+    "apiId": 1170,
     "sdkName": "booking_client",
     "sdkVersion": "1.0.0",
     "liblabVersion": "2",
@@ -10,7 +10,7 @@
     "languages": ["csharp"],
     "apiVersion": "1.0.0",
     "apiName": "booking",
-    "specFilePath": "./booking.com_openapispec.yaml",
+    "specFilePath": "./apis/booking.yaml",
     "auth": ["bearer", "apikey"],
     "languageOptions": {
       "csharp": {
@@ -43,7 +43,7 @@
         "header": "X-Affiliate-id"
       }
     },
-    "devContainer": false,
+    "devContainer": true,
     "generateEnv": true,
     "includeOptionalSnippetParameters": true,
     "inferServiceNames": false,
@@ -65,7 +65,6 @@
       "httpMethodsToRetry": ["GET", "POST", "PUT", "DELETE", "PATCH", "HEAD", "OPTIONS"]
     },
     "multiTenant": true,
-    "specUrl": "https://dev-liblab-api-stack-specs.s3.us-east-1.amazonaws.com/412/open-api-spec.yaml?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIA3C2RXH7MWUCMN7ON%2F20240725%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240725T185148Z&X-Amz-Expires=43200&X-Amz-Signature=e4403c4869e9900546bf5b97a13f677c94da152e14b31ff655da00d2bad8055e&X-Amz-SignedHeaders=host&x-id=GetObject",
     "includeWatermark": true,
     "packageId": "",
     "githubRepoName": "",
@@ -82,7 +81,7 @@
     "httpLibrary": {
       "name": "axios",
       "packages": {
-        "axios": "^1.6.8"
+        "axios": "^1.7.4"
       },
       "languages": ["typescript"]
     },
@@ -189,6 +188,9 @@
     "documentation/models/HotelAvailabilityOutputDto.md",
     "documentation/models/BlockAvailabilityOutputDto.md",
     "documentation/models/BlockOutputDto.md",
+    ".devcontainer/devcontainer.json",
+    "BookingClient/Http/ApiException.cs",
+    "BookingClient/Http/HttpResponseMessageExtensions.ejs';}.cs",
     "BookingClient/Models/ResponseOutputListSearchOutputDto.cs",
     "BookingClient/Models/SearchAccept.cs",
     "BookingClient/Models/ResponseOutputListDetailsOutputDto.cs",

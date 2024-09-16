@@ -34,8 +34,8 @@ using BookingClient.Models;
 
 var client = new BookingClientClient();
 
-var booker = new BookerInputDto("gv", BookerInputDto.Platform.Android);
-var guests = new GuestsInputDto(2, 3);
+var booker = new BookerInputDto("gt", BookerInputDto.Platform.Android);
+var guests = new GuestsInputDto(5, 0);
 var input = new SearchInputDto("checkin", "checkout", booker, guests);
 
 var response = await client.DemandApiV3Compatible.SearchAsync(input, SearchAccept.ApplicationJson);
