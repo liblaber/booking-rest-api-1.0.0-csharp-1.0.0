@@ -2,6 +2,8 @@
 
 using System.Net.Http.Json;
 using BookingClient.Http;
+using BookingClient.Http.Exceptions;
+using BookingClient.Http.Extensions;
 using BookingClient.Http.Serialization;
 using BookingClient.Models;
 
@@ -29,9 +31,9 @@ public class DemandApiV3CompatibleService : BaseService
         var response = await _httpClient
             .SendAsync(request, cancellationToken)
             .ConfigureAwait(false);
-        response.EnsureSuccessStatusCode();
 
         return await response
+                .EnsureSuccessfulResponse()
                 .Content.ReadFromJsonAsync<ResponseOutputListSearchOutputDto>(
                     _jsonSerializerOptions,
                     cancellationToken
@@ -60,9 +62,9 @@ public class DemandApiV3CompatibleService : BaseService
         var response = await _httpClient
             .SendAsync(request, cancellationToken)
             .ConfigureAwait(false);
-        response.EnsureSuccessStatusCode();
 
         return await response
+                .EnsureSuccessfulResponse()
                 .Content.ReadFromJsonAsync<ResponseOutputListDetailsOutputDto>(
                     _jsonSerializerOptions,
                     cancellationToken
@@ -99,9 +101,9 @@ public class DemandApiV3CompatibleService : BaseService
         var response = await _httpClient
             .SendAsync(request, cancellationToken)
             .ConfigureAwait(false);
-        response.EnsureSuccessStatusCode();
 
         return await response
+                .EnsureSuccessfulResponse()
                 .Content.ReadFromJsonAsync<ResponseOutputConstantsOutputDto>(
                     _jsonSerializerOptions,
                     cancellationToken

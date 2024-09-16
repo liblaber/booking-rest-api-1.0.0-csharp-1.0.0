@@ -2,6 +2,8 @@
 
 using System.Net.Http.Json;
 using BookingClient.Http;
+using BookingClient.Http.Exceptions;
+using BookingClient.Http.Extensions;
 using BookingClient.Http.Serialization;
 using BookingClient.Models;
 
@@ -41,9 +43,9 @@ public class DemandApiV2CompatibleService : BaseService
         var response = await _httpClient
             .SendAsync(request, cancellationToken)
             .ConfigureAwait(false);
-        response.EnsureSuccessStatusCode();
 
         return await response
+                .EnsureSuccessfulResponse()
                 .Content.ReadFromJsonAsync<ResponseOutputV2ReviewScoresOutputDto>(
                     _jsonSerializerOptions,
                     cancellationToken
@@ -76,9 +78,9 @@ public class DemandApiV2CompatibleService : BaseService
         var response = await _httpClient
             .SendAsync(request, cancellationToken)
             .ConfigureAwait(false);
-        response.EnsureSuccessStatusCode();
 
         return await response
+                .EnsureSuccessfulResponse()
                 .Content.ReadFromJsonAsync<ResponseOutputV2HotelsOutputDto>(
                     _jsonSerializerOptions,
                     cancellationToken
@@ -103,9 +105,9 @@ public class DemandApiV2CompatibleService : BaseService
         var response = await _httpClient
             .SendAsync(request, cancellationToken)
             .ConfigureAwait(false);
-        response.EnsureSuccessStatusCode();
 
         return await response
+                .EnsureSuccessfulResponse()
                 .Content.ReadFromJsonAsync<ResponseOutputV2HotelTypesOutputDto>(
                     _jsonSerializerOptions,
                     cancellationToken
@@ -130,9 +132,9 @@ public class DemandApiV2CompatibleService : BaseService
         var response = await _httpClient
             .SendAsync(request, cancellationToken)
             .ConfigureAwait(false);
-        response.EnsureSuccessStatusCode();
 
         return await response
+                .EnsureSuccessfulResponse()
                 .Content.ReadFromJsonAsync<ResponseOutputV2HotelThemeTypesOutputDto>(
                     _jsonSerializerOptions,
                     cancellationToken
@@ -160,9 +162,9 @@ public class DemandApiV2CompatibleService : BaseService
         var response = await _httpClient
             .SendAsync(request, cancellationToken)
             .ConfigureAwait(false);
-        response.EnsureSuccessStatusCode();
 
         return await response
+                .EnsureSuccessfulResponse()
                 .Content.ReadFromJsonAsync<ResponseOutputV2HotelFacilityTypeOutputDto>(
                     _jsonSerializerOptions,
                     cancellationToken
@@ -198,9 +200,9 @@ public class DemandApiV2CompatibleService : BaseService
         var response = await _httpClient
             .SendAsync(request, cancellationToken)
             .ConfigureAwait(false);
-        response.EnsureSuccessStatusCode();
 
         return await response
+                .EnsureSuccessfulResponse()
                 .Content.ReadFromJsonAsync<ResponseOutputV2HotelAvailabilityOutputDto>(
                     _jsonSerializerOptions,
                     cancellationToken
@@ -236,9 +238,9 @@ public class DemandApiV2CompatibleService : BaseService
         var response = await _httpClient
             .SendAsync(request, cancellationToken)
             .ConfigureAwait(false);
-        response.EnsureSuccessStatusCode();
 
         return await response
+                .EnsureSuccessfulResponse()
                 .Content.ReadFromJsonAsync<ResponseOutputV2BlockAvailabilityOutputDto>(
                     _jsonSerializerOptions,
                     cancellationToken

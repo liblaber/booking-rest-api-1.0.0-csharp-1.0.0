@@ -38,7 +38,7 @@ using BookingClient.Models;
 
 var client = new BookingClientClient();
 
-var hotelIds = new List<long>() { 4 };
+var hotelIds = new List<long>() { 3 };
 var reviewScoresInputDto = new ReviewScoresInputDto(hotelIds);
 
 var response = await client.DemandApiV2Compatible.GetHotelsReviewScoresAsync(reviewScoresInputDto, GetHotelsReviewScoresAccept.ApplicationJsonApplicationXml);
@@ -204,7 +204,7 @@ using BookingClient.Models;
 
 var client = new BookingClientClient();
 
-var hotelAvailabilityInputDto = new HotelAvailabilityInputDto("checkin", "checkout", "guest_country", 7);
+var hotelAvailabilityInputDto = new HotelAvailabilityInputDto("checkin", "checkout", "guest_country", 6);
 
 var response = await client.DemandApiV2Compatible.GetHotelAvailabilityAsync(hotelAvailabilityInputDto, GetHotelAvailabilityAccept.ApplicationJson);
 
@@ -237,7 +237,7 @@ using BookingClient.Models;
 
 var client = new BookingClientClient();
 
-var hotelIds = new List`<long>`() { 6 };
+var hotelIds = new List<long>() { 6 };
 var blockInput = new BlockAvailabilityInputDto(hotelIds, "checkin", "checkout", "guest_cc");
 
 var response = await client.DemandApiV2Compatible.GetBlockAvailabilityAsync(blockInput, GetBlockAvailabilityAccept.ApplicationJsonApplicationXml);
